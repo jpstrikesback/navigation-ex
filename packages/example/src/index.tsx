@@ -23,6 +23,7 @@ import {
 } from '@react-navigation/stack';
 
 import SimpleStackScreen from './Screens/SimpleStack';
+import NativeStackScreen from './Screens/NativeStack';
 import BottomTabsScreen from './Screens/BottomTabs';
 import MaterialTopTabsScreen from './Screens/MaterialTopTabs';
 import MaterialBottomTabs from './Screens/MaterialBottomTabs';
@@ -43,6 +44,7 @@ type RootStackParamList = {
 
 const SCREENS = {
   'simple-stack': { title: 'Simple Stack', component: SimpleStackScreen },
+  'native-stack': { title: 'Native Stack', component: NativeStackScreen },
   'bottom-tabs': { title: 'Bottom Tabs', component: BottomTabsScreen },
   'material-top-tabs': {
     title: 'Material Top Tabs',

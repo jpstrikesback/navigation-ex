@@ -3,5 +3,12 @@
  */
 export {
   default as createNativeStackNavigator,
-  NativeStackNavigationProp,
 } from './navigators/createNativeStackNavigator';
+
+/**
+ * Types
+ */
+export {
+  NativeStackNavigationOptions,
+  NativeStackNavigationProp,
+} from './types';

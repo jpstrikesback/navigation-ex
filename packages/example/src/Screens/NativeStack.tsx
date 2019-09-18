@@ -95,7 +95,7 @@ export default function SimpleStackScreen({ navigation, options }: Props) {
       <SimpleStack.Screen
         name="album"
         component={AlbumsScreen}
-        options={{ title: 'Album' }}
+        options={{ title: 'Album', largeTitle: true }}
       />
     </SimpleStack.Navigator>
   );

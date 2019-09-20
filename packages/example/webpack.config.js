@@ -10,7 +10,12 @@ module.exports = async function(env, argv) {
   const config = await createExpoWebpackConfigAsync(env, argv);
 
   config.module.rules.push({
-    test: /packages\/.+\.(js|ts|tsx)$/,
+    test: /\.(js|jsx|ts|tsx)$/,
+    include: [
+      ...fs
+        .readdirSync(path.join(__dirname, '..'))
+        .map(name => path.resolve(__dirname, '..', name, 'src')),
+    ],
     use: 'babel-loader',
   });
 
